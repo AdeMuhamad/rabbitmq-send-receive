@@ -2,7 +2,7 @@
 import pika
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(
-        host='marlin-rabbitmq-prod.bhinnekalocal.com'))
+        host='PUT URL RABBITMQ HERE'))
 channel = connection.channel()
 
 channel.queue_declare(queue='gans')

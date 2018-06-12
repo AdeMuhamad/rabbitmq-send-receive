@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import pika
 connection = pika.BlockingConnection(pika.ConnectionParameters(
-              'marlin-rabbitmq-prod.bhinnekalocal.com'))
+              'PUT URL RABBITMQ HERE'))
 channel = connection.channel()
 channel.queue_declare(queue='gans')
 def callback(ch, method, properties, body):
